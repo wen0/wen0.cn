@@ -15,7 +15,7 @@
 	<meta http-equiv="Cache-Control" content="no-transform" />
 	<meta http-equiv="Cache-Control" content="no-siteapp" />
 	<link rel="shortcut icon" href="/favicon.ico">
- 	<link rel="stylesheet" href="http://static.wen0.cn/media/css/resume/style.css?v={:mt_rand(0,999)}" />
+ 	<link rel="stylesheet" href="http://cdn.wen0.cn/cdn/css/resume/style.css" />
  </head>
  <body>
 	<header class='text-center'>个人简历</header>	

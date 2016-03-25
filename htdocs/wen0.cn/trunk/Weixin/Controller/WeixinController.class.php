@@ -9,7 +9,6 @@ class WeixinController extends CommonController
     
     protected function _initialize()
     {
-        $this->SData('wen0', 'aa');
         if (!empty($_GET['echostr'])) {
             if($this->checkSignature()){
                 echo $_GET["echostr"];
@@ -22,8 +21,6 @@ class WeixinController extends CommonController
 
     protected function getWeixinPUsh ()
     {
-        $data1 = $GLOBALS["HTTP_RAW_POST_DATA"];
-        $this->SData('wen0', $data1);
         $data = file_get_contents("php://input");
         $this->SData('wen0', $data);
         if (!$data) {

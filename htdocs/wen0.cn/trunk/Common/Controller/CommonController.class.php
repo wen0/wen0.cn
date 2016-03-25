@@ -125,8 +125,25 @@ class CommonController extends Controller {
         }
     }
 
+    /**
+     *404显示
+     *
+     *
+     *
+     *
+     *
+     */
 
+    public function show404()
+    {
+        @header("http/1.1 404 not found");
+        @header("status: 404 not found");
+        @include("404.html");//跳转到某一个页面，推荐使用这种方法
+        exit();
+    }
 
-
-
+    public function _empty()
+    {
+        $this->show404();
+    }
 }

@@ -16,6 +16,7 @@ return array (
         'u'     => 'User',
         'admin' => 'Backend',
         'weixin'     => "Weixin",
+        'resume'     => "Resume",
         '*'     => array('Space', 'domain=*'), // 二级泛域名指向Space模块
     ),
     'TMPL_ACTION_ERROR'     =>  COMMON_PATH.'View/jump_new.tpl',      //默认错误跳转对应的模板文件
